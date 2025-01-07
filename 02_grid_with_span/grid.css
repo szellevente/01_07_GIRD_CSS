@@ -1,0 +1,22 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.grid-item{
+    background-color: lightblue;
+    font-size: 25px;
+    border: 1px,solid,blue;
+}
+
+.grid-item:nth-child(5){
+    grid-column: span 2;
+    background-color: lightgreen;
+}
+
+.grid-item:nth-child(8){
+    grid-row: span 2;
+    background-color: lightcyan;
+}
